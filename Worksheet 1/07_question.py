@@ -1,0 +1,11 @@
+# Input a value twice and assign to x and y. Compare id(x) and id(y). Try with both numbers and strings
+x= input("Enter a value for x: ")
+y= input("Enter a value for y: ")      
+a= int(x)
+b= int(y)
+print("ID of x:", id(x))
+print("ID of y:", id(y))
+print("ID of a:", id(a))    
+print("ID of b:", id(b))
+print("Are the IDs of a and b the same?", id(a) == id(b))
+print("Are the IDs of x and y the same?", id(x) == id(y))
