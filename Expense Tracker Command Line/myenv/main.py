@@ -1,3 +1,5 @@
+from Adding_Expense import add_new_expense
+
 def welcome():
     print(f""" 
          ____       __  __                          
@@ -29,15 +31,19 @@ while not is_stop:
             raise ValueError("Invalid Value! Please choose a valid option.")
         
         if choice == "N":
-            # add_new_expense()
+            print("Adding a new Expense:\n\n\n")
+            add_new_expense()
             pass
         elif choice == "V":
+            print("Viewing an Existing Expense:\n\n\n")
             # view_expense()
             pass
         elif choice == "A":
+            print("Displaying All Expenses:\n\n\n")
             # view_all_expenses()
             pass
         elif choice == "S":
+            print("Generating Summary Report:\n\n\n")
             # show_summary()
             pass
         elif choice == "X":
