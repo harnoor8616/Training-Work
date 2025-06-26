@@ -1,5 +1,6 @@
 from Adding_Expense import add_new_expense
-
+from Viewing_Expense import view_expense
+from View_all_expenses import view_all_expenses
 def welcome():
     print(f""" 
          ____       __  __                          
@@ -36,11 +37,11 @@ while not is_stop:
             pass
         elif choice == "V":
             print("Viewing an Existing Expense:\n\n\n")
-            # view_expense()
+            view_expense()
             pass
         elif choice == "A":
             print("Displaying All Expenses:\n\n\n")
-            # view_all_expenses()
+            view_all_expenses()
             pass
         elif choice == "S":
             print("Generating Summary Report:\n\n\n")
