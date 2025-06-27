@@ -14,15 +14,12 @@ def add_new_expense():
         category = input("Enter the category of the Expense:   ").strip().title()
         if not category:
             raise ValueError("Category cannot be empty.")
-
         entered_date = input("Enter the Date of Expense (YYYY-MM-DD) [Leave empty for today]:  ").strip()
         if entered_date == "":
             Date = date.today()
         else:
             Date = date.fromisoformat(entered_date)  
-
         note = input("Enter Additional Text:  ").strip()
-
         with open(f'Expenses.csv',mode='a') as expense_data:
             writer=csv.writer(expense_data)
             expense_data.seek(0)
@@ -30,7 +27,6 @@ def add_new_expense():
                  writer.writerow(["Amount", "Category", "Date", "Note"])
             writer.writerow([amount,category,Date,note])
         print("\n✅ Expense Recorded Successfully:")
-
     except ValueError as ve:
         print(f"Input Error: {ve}")
     except Exception as e:

@@ -1,12 +1,4 @@
-# 2.	2. View All Expenses
-# Read all expenses from the file.
-# Display them in a readable format:
-# 1. ₹150 | Food | 2025-06-22 | Lunch at KFC
-# 2. ₹90  | Travel | 2025-06-21 | Metro ticket
 import csv
-
-
-
 def view_all_expenses():
     try:
         with open('Expenses.csv',mode='r') as Expenses_data:

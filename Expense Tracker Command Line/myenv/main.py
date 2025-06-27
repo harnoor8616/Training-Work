@@ -1,6 +1,7 @@
 from Adding_Expense import add_new_expense
 from Viewing_Expense import view_expense
 from View_all_expenses import view_all_expenses
+from Summary_report import show_summary
 def welcome():
     print(f""" 
          ____       __  __                          
@@ -45,7 +46,7 @@ while not is_stop:
             pass
         elif choice == "S":
             print("Generating Summary Report:\n\n\n")
-            # show_summary()
+            show_summary()
             pass
         elif choice == "X":
             print("Exiting the application. Goodbye!")
